@@ -19,5 +19,5 @@ class Node:
         else:
             self.output_states[output_state] = 1
 
-    def train_node(self, eval_method, input_states, goaloutput_states, weight):
-        eval_method
+    def train_node(self, eval_method, goal_output_states, depth, max_depth):
+        nextNode = traverse_node(eval_method(input_states)
